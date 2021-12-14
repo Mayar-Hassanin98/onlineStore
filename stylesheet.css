@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif; 
+}
+.clear{
+    clear: both;
+    overflow: hidden;
+}
+.right{
+  
+    float: right;
+}
+.left{
+    float: left;
+}
+
+h1{
+
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; 
+}
+.items{
+    width: 90%;
+    margin: 0 auto;
+}
+img{
+    margin: 0 auto;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    
+}
+img:hover{
+    
+}
+.btn2{
+    position: absolute;
+    right: 35%;
+    top: 40%;
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius:1.5em;
+    display: none;
+}
+.btn2:hover{
+    transition: 0.9s;
+    box-shadow: 2px 3px 5px grey;
+}
+.hoverImage:hover{
+ 
+   width: 100%;
+     -webkit-transform:scale(1.05); /*Webkit: Scale up image to 1.2x original size*/
+
+-moz-transform:scale(1.05); /*Mozilla scale version*/
+-o-transform:scale(1.05); /*Opera scale version*/
+box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+-webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+opacity: 1;
+} 
+
+.cartBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99999;
+	transition: 0.3s linear;
+	transform: scale(0);
+}
+.cartBox.active{
+	transform: scale(1);
+}
+.sum{
+    text-align: right;
+    margin-right: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.cartBox .cart{
+	position: relative;
+    overflow-y:scroll;
+    height: 70%;
+    width: 80%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cartBox .cart .fa-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background:#f00;
+	padding:10px 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.cartBox .cart .fa-close:hover{
+	background: #ff0000a5;
+}
+.cartBox .cart h1{
+	position: relative;
+	margin-top: 2%;
+	font-size: 2.8rem;
+	color: black;
+}
+.cart-content{
+    width: 100%;
+    margin: 50px 0px 100px 0px;
+    height: auto;
+}
+.cart-input{
+    width: 40px;
+    height: 35px;
+}
+.img-cart{
+        width: 50px;
+        height: 50px;
+         margin: 0;
+       padding: 0;
+             
+        
+}
+
+td,th,tr{
+    margin: 0;
+}
+.col-12{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.col-md-3{
+   margin: 5px 0; 
+}
+.caption{
+    margin-top: 10px;
+    text-align: center;
+}
+.footer{
+    margin-top: 40px;
+    background-color: pink;
+}
+.footer .top-line{
+    position: relative;
+    text-align: center;
+    margin: 10px 15%;
+    margin-top: 20px;
+}
+.footer .top-line .col-md-3{
+    margin-top: 30px;
+}
+.form-2 input{
+    height: 40px;
+}
+.form-2{
+    position: relative;
+    padding-left: 50px;
+}
+.form-2 input{
+    border-radius: 1.5em;
+    padding-left: 40px;
+    background-color: #eed3d7;
+    border: 1px solid #eed3d7;
+}
+.form-2 i{
+    position: absolute;
+    left: 60px; 
+    top: 15px;
+    background: linear-gradient(to bottom,#d68de4,#d68de4,#f3ccbc,#f3ccbc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+.form-2 ::placeholder{
+    color: white;
+}
+.form-2 .btn{
+    position: absolute;
+    background-image: linear-gradient(to bottom,#d68de4,#d68de4,#f3ccbc);
+    color: white;
+    left: 200px;
+    height: 40px;
+    border-radius: 1.5em;
+}
+.top-line{
+    text-align: center;
+    color: white;
+    padding: 0 110px;
+}
+.bottom-line{
+    padding-top: 25px;
+    padding-left: 85px;
+    padding-right: 95px;
+}
+.bottom-line h5{
+    color: white;
+}
+.bottom-line p{
+    color: white;
+    font-size: 10px;
+    padding: 12px 0;
+    padding-right: 50px;
+    color: antiquewhite;
+}
+.bottom-line ul{
+   list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.bottom-line ul li{
+   display: inline-block;
+    padding: 0 5px;
+    color: white;   
+}
+.details-footer {
+    padding: 0;
+    text-align: left;   
+}
+.details-footer p{
+  padding: 10px;
+    font-size: 11px;
+    color: white;
+    padding-left: 100px;
+}
+
+.copyrights{
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 10px;
+}
